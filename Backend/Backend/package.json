@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server" : "nodemon handler.js",
+    "client" : "npm run start --prefix ../explore",
+    "dev" : "concurrently --kill-others-on-fail \"npm runs server\" \"npm runs client\""
+  },
+  "proxy": "http://localhost:4000/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body": "^5.1.0",
+    "concurrently": "^9.0.1",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7",
+    "parser": "^0.1.4"
+  }
+}
